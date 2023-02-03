@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Brown;
+        font-style: normal;
+        font-display: swap;
+        font-weight: 300;
+        src: font-url("http://clones.vue/storage/fonts/brown-regular.ttf")
+            format("TrueType");
+    }
+    svg {
+        @apply text-gray-600/90;
+    }
+    body {
+        @apply antialiased text-sm;
+    }
+}

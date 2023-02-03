@@ -4,16 +4,18 @@ import autoprefixer from 'autoprefixer'
 import laravel from 'vite-plugin-laravel'
 import vue from '@vitejs/plugin-vue'
 import inertia from './resources/scripts/vite/inertia-layout'
+import path from 'path'
 
 export default defineConfig({
-	plugins: [
-		inertia(),
-		vue(),
-		laravel({
-			postcss: [
-				tailwindcss(),
-				autoprefixer(),
-			],
-		}),
-	],
+    plugins: [
+        inertia(),
+        vue(),
+        laravel({
+            postcss: [
+                tailwindcss(),
+                autoprefixer(),
+            ],
+
+        }),
+    ]
 })

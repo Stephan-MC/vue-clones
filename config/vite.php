@@ -15,7 +15,7 @@ return [
             'entrypoints' => [
                 'ssr' => 'resources/scripts/ssr.ts',
                 'paths' => [
-                    'resources/css/tailwind.css',
+                    'resources/sass/tailwind.scss',
                     'resources/scripts/main.ts',
                     'resources/js/app.js',
                 ],
@@ -45,6 +45,8 @@ return [
     */
     'aliases' => [
         '@' => 'resources',
+        '@components' => 'resources/views/components',
+        '@layouts' => 'resources/views/layouts',
     ],
 
     /*
